@@ -1,34 +1,32 @@
-import { Text, SafeAreaView, StyleSheet } from 'react-native';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import FirstScreen from './components/screens/FirstScreen';
+import FirstScreenA  from './components/screens/a';
+import LoginScreen from './components/screens/LoginScreen';
+import RegisterScreen from './components/screens/RegisterScreen';
+import ForgetPassword from './components/screens/ForgetPassword';
+import CodeVerification from './components/screens/CodeVerification';
+import XMEyeLoginScreen from './components/screens/XMEyeLoginScreen';
+import YellowLoginScreen from './components/screens/YellowLoginScreen';
 
-// You can import supported modules from npm
-import { Card } from 'react-native-paper';
-
-// or any files within the Snack
+// Tạo Stack Navigator
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.paragraph}>
-        Change code in the editor and watch it change on your phone! Save to get a shareable url.
-      </Text>
-      <Card>
-        <AssetExample />
-      </Card>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="FirstScreen">
+        {/* Danh sách các màn hình */}
+        <Stack.Screen name="FirstScreen" component={FirstScreen} />
+        <Stack.Screen name="a" component={FirstScreenA} />
+        <Stack.Screen name="LoginScreen" component={LoginScreen} />
+        <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+        <Stack.Screen name="ForgetPassword" component={ForgetPassword} />
+        <Stack.Screen name="CodeVerification" component={CodeVerification} />
+        <Stack.Screen name="XMEyeLoginScreen" component={XMEyeLoginScreen} />
+        <Stack.Screen name="YellowLoginScreen" component={YellowLoginScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
-    padding: 8,
-  },
-  paragraph: {
-    margin: 24,
-    fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-});
