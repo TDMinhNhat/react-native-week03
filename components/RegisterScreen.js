@@ -22,7 +22,7 @@ export default function RegisterScreen() {
           onPress={() => setPasswordVisible(!passwordVisible)}
           style={styles.eyeIcon}
         >
-          <Image source={require('../../assets/eys_icon1.png')} style={styles.eyeIconImage} />
+          <Image source={require('../assets/eys_icon1.png')} style={styles.eyeIconImage} />
         </TouchableOpacity>
       </View>
 

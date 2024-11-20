@@ -19,7 +19,7 @@ export default function LoginScreen({navigation}) {
           onPress={() => setPasswordVisible(!passwordVisible)}
           style={styles.eyeIcon}
         >
-          <Image source={require('../../assets/eye_icon.png')} style={styles.eyeIconImage} />
+          <Image source={require('../assets/eye_icon.png')} style={styles.eyeIconImage} />
         </TouchableOpacity>
       </View>
 
@@ -40,13 +40,13 @@ export default function LoginScreen({navigation}) {
       
       <View style={styles.socialContainer}>
         <TouchableOpacity >
-          <Image source={require('../../assets/facebook_icon.png')} style={styles.socialIcon} />
+          <Image source={require('../assets/facebook_icon.png')} style={styles.socialIcon} />
         </TouchableOpacity>
         <TouchableOpacity>
-          <Image source={require('../../assets/zalo_icon.png')} style={styles.socialIcon} />
+          <Image source={require('../assets/zalo_icon.png')} style={styles.socialIcon} />
         </TouchableOpacity>
         <TouchableOpacity>
-          <Image source={require('../../assets/gg_icon.png')} style={styles.socialIcon} />
+          <Image source={require('../assets/gg_icon.png')} style={styles.socialIcon} />
         </TouchableOpacity>
       </View>
     </View>

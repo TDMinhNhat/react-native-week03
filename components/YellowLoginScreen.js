@@ -9,12 +9,12 @@ export default function YellowLoginScreen() {
       <Text style={styles.title}>LOGIN</Text>
 
       <View style={styles.inputContainer}>
-        <Image style={styles.icon} source={require('../../assets/user_loginyellow.png')} />
+        <Image style={styles.icon} source={require('../assets/user_loginyellow.png')} />
         <TextInput style={styles.input} placeholder="Name" />
       </View>
       
       <View style={styles.inputContainer}>
-        <Image style={styles.icon} source={require('../../assets/password_logintellow.png')} />
+        <Image style={styles.icon} source={require('../assets/password_logintellow.png')} />
         <TextInput
           style={styles.inputPassword}
           placeholder="Password"
@@ -24,7 +24,7 @@ export default function YellowLoginScreen() {
           onPress={() => setPasswordVisible(!passwordVisible)}
           style={styles.eyeIcon}
         >
-          <Image source={require('../../assets/eye_icon.png')} style={styles.eyeIconImage} />
+          <Image source={require('../assets/eye_icon.png')} style={styles.eyeIconImage} />
         </TouchableOpacity>
       </View>
 

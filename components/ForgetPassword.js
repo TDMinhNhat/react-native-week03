@@ -6,7 +6,7 @@ export default function ForgetPassword({navigation}) {
     <View style={styles.container}>
       <View style={styles.logoContainer}>
         {/* Sử dụng cú pháp require đúng cách */}
-        <Image source={require('../../assets/forgetpassword.jpg')} style={styles.logo} />
+        <Image source={require('../assets/forgetpassword.jpg')} style={styles.logo} />
       </View>
       <Text style={styles.title}>FORGET PASSWORD</Text>
       <Text style={styles.description}>
